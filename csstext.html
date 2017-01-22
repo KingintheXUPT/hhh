@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style typle="text/css">
+    .frame1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        text-align: center;
+        border: solid 2px lightslategrey;
+        border-radius: 10px;
+        width: 1500px;
+        height: 20px;
+    }
+    .frame2{
+        margin-top: 50px;
+        display: inline;
+        margin-right: 200px;
+        margin-left: 0px;
+    }
+    .title{
+      margin-top:20px;
+      border: solid 2px lightslategrey;
+      width:1500px;
+      margin-left:auto;
+      margin-right: auto;
+      border-radius: 5px;
+    }
+    
+    .title-colour{
+        margin-top:0px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom:5px;
+        width: 1490px; 
+        height:;30px;       
+        background-color: rgb(232,232,232);
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button {
+      margin-top: 30px;
+      margin-left: 650px;
+      background-color: #6495ED; 
+      border: solid;
+      color: white;
+      text-align:center;
+      padding: 10px 10px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+}
+  </style>
+</head>
+<body>
+<h1 style="front-size:200%;text-align:center">统一建模语言理论测试</h1>
+<div class="frame1">
+    <div class="frame2">考试科目:统一建模语言</div> 
+    <div class="frame2">时间: 100分钟 </div>
+    <div class="frame2">得分:</div>
+   </div>
+<div class="frame1">
+  <from>
+    <div class="frame2">班级 (必填) : <input type="text" name="class"></div>
+    
+    <div class="frame2">学号 (必填) ：<input type="text" name="number"></div>
+   
+    <div class="frame2">姓名 (必填) : <input type="text" name="name"></div>
+  </from>
+</div>
+  
+<div class="title">
+<div class="title-colour"><h3>一、填空题 (每孔5分,共20分)</h3></div>
+    <ol>
+      <li>UML中的中文全称是:
+        <br>
+        <input type="text" name="UML">
+      </li>  
+      <li>对象最突出的特征是:
+        <br>
+        <input type="text" name="object1"> <input type="text" name="object2"> <input type="text" name="object3">
+      </li>
+  </ol>
+</div>
+<div class="title">
+<div class="title-colour"><h3>二、选择题 (每题5分，共20分)</h3></div>
+    <ol>
+      <li>UML与软件工程的关系是：
+        <form>
+          <input type="radio" name="UML" value="A">(A)UML就是软件工程<br/>
+          <input type="radio" name="UML" value="B">(B)UML参与到软件工程中软件开发的几个阶段<br/>
+          <input type="radio" name="UML" value="C">(C)UML与软件工程无关<br/>
+          <input type="radio" name="UML" value="D">(D)UML是软件工程的一部分
+        <form>
+      </li>
+      <li>Java语言支持:<br/>
+          <input type="radio" name="JAVA" value="A">(A)单继承<br/>
+          <input type="radio" name="JAVA" value="B">(B)多继承<br/>
+          <input type="radio" name="JAVA" value="C">(C)单继承和多继承都支持<br/>
+          <input type="radio" name="JAVA" value="D">(D)单继承和多继承都不支持
+          </li> 
+     </ol>
+</div>
+<div class="title">
+<div class="title-colour"><h3>三、多项选择题(每题10分，共20分)</h3></div>
+        <ol>
+          <li>用例的粒度分为一下哪三种:<br/>
+            <form>
+              <input type="checkbox" name="lidu" value="A">(A)概述级<br/>
+              <input type="checkbox" name="lidu" value="B">(B)需求级<br/>
+              <input type="checkbox" name="lidu" value="C">(C)用户目标级<br/>
+              <input type="checkbox" name="lidu" value="D">(D)子功能级<br/>
+            </form>
+          </li>
+          <li>类图由以下哪三部分组成：<br/>
+            <form>
+              <input type="checkbox" name="teitu" value="A">(A)名称(Name)<br/>
+              <input type="checkbox" name="teitu" value="B">(B)属性(Attribute)<br/>
+              <input type="checkbox" name="teitu" value="C">(C)概述(Operation)<br/>
+              <input type="checkbox" name="teitu" value="D">(D)方法(Function) 
+             </form>
+           </li>
+        </ol>
+</div>
+<div class="title">
+<div class="title-colour"><h3>四、判断题（每题10分，共20分）</h3></div>
+  <ol>
+    <form>
+    <li>用例图只是用于和客户交流和沟通的，用于确定需求。
+      <span><img src="./对勾.jpg" width="10" height="10"></span>
+      <input type="radio" name="P1" value="true">
+      <span><img src="./叉号.jpg" width="10" height="10"></span>
+      <input type="radio" name="P1" value="false">
+    </li>
+    <form>
+    <form>
+    <li>在状态图中，终止状态在一个状态图中允许有任意多个。
+      <span><img src="./对勾.jpg" width="10" height="10"></span>
+      <input type="radio" name="P2" value="true">
+      <span><img src="./叉号.jpg" width="10" height="10"></span>
+      <input type="radio" name="P2" value="false">
+    </li>
+    <form>  
+  </ol>
+</div>
+<div class="title">
+<div class="title-colour"><h3>五、简答题（每题20分，共20分）</h3></div>
+  <ol>
+    <li><form>简述什么事模型以及模型的表现形式？
+     <textarea style="width:150px;height:100px"></textarea>
+    </form>
+    </li>
+  </ol>
+</div>
+<div>
+<form>
+  <input class="button" type="submit" name="submit" value="计算分数"> 
+</form>
+</div>
+</body>
+</html>
