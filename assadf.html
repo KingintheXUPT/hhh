@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptText</title>
+    <style type="text/css">
+        .div_one ul li{
+            float:left;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="div_one">
+    <button id="btn" onclick="func()">click it please</button>
+    <ul id="test">
+    </ul>
+</div>
+
+<!--<div class="div_two">-->
+<!--<ul class="ul_two">-->
+<!--<li>hehe</li>-->
+<!--<li>haha</li>-->
+<!--</ul>-->
+<!--</div>-->
+<script type="text/javascript">
+    window.onload = function(){
+        let ul = document.getElementById("test");
+        for(let i=0;i<100;i++){
+            let li = document.createElement("li");
+            let content = document.createTextNode(i);
+            li.appendChild(content);
+            ul.appendChild(li);
+        }
+    }
+    function func() {
+        let ul = document.getElementById("test");
+        let temp=ul.removeChild(ul.lastChild);
+        //ul.appendChild(temp);
+        ul.insertBefore(temp,ul.firstChild);
+        for(let j=0;j<99;j++){
+            let temp2=ul.removeChild(ul.lastChild);
+            ul.insertBefore(temp2,ul.childNodes[j+2]);
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>
