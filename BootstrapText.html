@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script src="jquery-3.2.0.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            margin-top: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(bf1.jpg);
+            background-size: cover; /* 图片的填充方式:覆盖*/
+            min-width: 800px;
+            min-height: 600px;
+
+            background-repeat: no-repeat; /* 是否重复图片*/
+            background-attachment: fixed; /* 背景静止 */
+        }
+
+        /*.div_bg{*/
+        /*margin-top: 0;*/
+        /*top: 0;*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*background-image: url(20192C5.jpg);*/
+        /*background-size: 100%; !* 图片的填充方式:覆盖*!*/
+        /*min-width: 800px;*/
+        /*min-height: 600px;*/
+        /*background-repeat: no-repeat; !* 是否重复图片*!*/
+        /*background-attachment: fixed; !* 背景静止 *!*/
+        /*}*/
+
+        ul {
+            padding-left: 10px;
+            float: left;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        li {
+            text-decoration: none;
+            list-style-type: none;
+            float: left;
+            font-size: 21px;
+            margin-right: 10px;
+            height: auto;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding-bottom: 0;
+
+        }
+
+        ul:hover {
+
+        }
+
+        li:hover {
+
+            font-size: 25px;
+            color: #b8b8b8;
+        }
+
+        .div_tital {
+            width: 100%;
+            height: auto;
+            min-width: 1250px;
+            min-height: 40px;
+            background-color: black;
+            opacity: 0.5;
+            padding-top: 5px;
+        }
+
+        .div_tital_down {
+            min-width: 800px;
+            width: 100%;
+            height: 150px;
+            border-top: solid 10px blue;
+            background-color: black;
+            opacity: 0.5;
+            border-top: solid black;
+            display: none;
+            margin: 0;
+        }
+
+        .div_tital_down > div > div {
+            float: left;
+            /*position: absolute;*/
+            height: 150px;
+            width: 20%;
+            opacity: 1.0;
+            background-size: cover;
+        }
+
+        .div_tital_down > div {
+            padding-left: 1px;
+        }
+
+        #div_ti_down > div {
+            /*min-width: 1200px;*/
+            right: 0;
+            height: auto;
+            width: 100%;
+            padding: 0;
+            display: none;
+
+        }
+
+        .div_tital_down > div > div:hover {
+            border: solid 1px #2d78f4;
+            opacity: 0.7;
+        }
+
+        .div_body{
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            height: 50%;
+            /*min-height: 100px;*/
+            background-color: #2d78f4;
+            opacity: 0.5;
+            display:none;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="div_ti" class="div_tital">
+    <ul id="ul1">
+        <li>
+            <div>英国</div>
+
+        </li>
+        <li>
+            <div>美国</div>
+        </li>
+        <li>
+            <div>法国</div>
+        </li>
+        <li>
+            <div>奥匈帝国</div>
+        </li>
+        <li>
+            <div>德国</div>
+        </li>
+    </ul>
+</div>
+<div id="div_ti_down" class="div_tital_down">
+    <div class="div_sm_En">
+        <div class="div_bfe" style="background-image:url(bf2.jpg) "></div>
+        <div class="div_bfe" style="background-image:url(bf3.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf4.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf5.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf6.jpg)"></div>
+    </div>
+    <div class="div_sm_US">
+        <div class="div_bfe" style="background-image:url(bf7.jpg) "></div>
+        <div class="div_bfe" style="background-image:url(bf8.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf9.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf10.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf11.jpg)"></div>
+    </div>
+    <div class="div_sm_F">
+        <div class="div_bfe" style="background-image:url(bf12.jpg) "></div>
+        <div class="div_bfe" style="background-image:url(bf13.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf14.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf15.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf16.jpg)"></div>
+    </div>
+    <div class="div_sm_A">
+        <div class="div_bfe" style="background-image:url(bf17.jpg) "></div>
+        <div class="div_bfe" style="background-image:url(bf3.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf14.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf1.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf6.jpg)"></div>
+    </div>
+    <div class="div_sm_D">
+        <div class="div_bfe" style="background-image:url(bf11.jpg) "></div>
+        <div class="div_bfe" style="background-image:url(bf9.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf4.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf8.jpg)"></div>
+        <div class="div_bfe" style="background-image:url(bf7.jpg)"></div>
+    </div>
+
+</div>
+
+<div id="div_body" class="div_body">
+
+</div>
+<script src="jquery-3.2.0.min.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("ul,li,#div_ti").mouseenter(function () {
+            $("#div_ti_down").show(1);
+
+        });
+        $("#div_ti_down").mouseleave(function () {
+            $("#div_ti_down").hide(1);
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("div.div_bfe").mouseenter(function () {
+            $("#div_ti_down").css({
+                opacity: "+=0.5",
+
+            });
+        });
+        $("div.div_bfe").mouseleave(function () {
+            $("#div_ti_down").css({
+                opacity: "-=0.5"
+            });
+        });
+    })
+
+    $(document).ready(function () {         //图片查看效果
+        $("ul li:eq(0)").mouseenter(function () {
+            $(".div_sm_En").css({
+                display: "block",
+            });
+        });
+        $("ul li:eq(0)").mouseleave(function () {
+            $("ul li:gt(0)").mouseenter(function () {
+                $(".div_sm_En").css({
+                    display: "none"
+                });
+            });
+            $("#div_ti_down").mouseleave(function () {
+                $(".div_sm_En").css({
+                    display: "none"
+                });
+            });
+        });
+        $("ul li:eq(1)").mouseenter(function () {
+            $(".div_sm_US").css({
+                display: "block"
+            });
+        });
+        $("ul li:eq(1)").mouseleave(function () {
+            $("ul li:gt(1)").mouseenter(function () {
+                $(".div_sm_US").css({
+                    display: "none"
+                });
+            });
+            $("ul li:lt(1)").mouseenter(function () {
+                $(".div_sm_US").css({
+                    display: "none"
+                });
+            });
+            $("#div_ti_down").mouseleave(function () {
+                $(".div_sm_US").css({
+                    display: "none"
+                });
+            });
+        });
+        $("ul li:eq(2)").mouseenter(function () {
+            $(".div_sm_F").css({
+                display: "block"
+            });
+        });
+        $("ul li:eq(2)").mouseleave(function () {
+            $("ul li:gt(2)").mouseenter(function () {
+                $(".div_sm_F").css({
+                    display: "none"
+                });
+            });
+            $("ul li:lt(2)").mouseenter(function () {
+                $(".div_sm_F").css({
+                    display: "none"
+                });
+            });
+            $("#div_ti_down").mouseleave(function () {
+                $(".div_sm_F").css({
+                    display: "none"
+                });
+            });
+        });
+        $("ul li:eq(3)").mouseenter(function () {
+            $(".div_sm_A").css({
+                display: "block"
+            });
+        });
+        $("ul li:eq(3)").mouseleave(function () {
+            $("ul li:gt(3)").mouseenter(function () {
+                $(".div_sm_A").css({
+                    display: "none"
+                });
+            });
+            $("ul li:lt(3)").mouseenter(function () {
+                $(".div_sm_A").css({
+                    display: "none"
+                });
+            });
+            $("#div_ti_down").mouseleave(function () {
+                $(".div_sm_A").css({
+                    display: "none"
+                });
+            });
+        });
+        $("ul li:eq(4)").mouseenter(function () {
+            $(".div_sm_D").css({
+                display: "block"
+            });
+        });
+        $("ul li:eq(4)").mouseleave(function () {
+            $("ul li:gt(4)").mouseenter(function () {
+                $(".div_sm_D").css({
+                    display: "none"
+                });
+            });
+            $("ul li:lt(4)").mouseenter(function () {
+                $(".div_sm_D").css({
+                    display: "none"
+                });
+            });
+            $("#div_ti_down").mouseleave(function () {
+                $(".div_sm_D").css({
+                    display: "none"
+                });
+            });
+        });
+    });
+
+    $(document).ready(function () {
+
+    })
+
+
+
+</script>
+</body>
+</html>
