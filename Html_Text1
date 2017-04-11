@@ -4,18 +4,78 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
+  <style typle="text/css">
+    .frame1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        text-align: center;
+        border: solid 2px lightslategrey;
+        border-radius: 10px;
+        width: 1000px;
+        height: 20px;
+    }
+    .frame2{
+        margin-top: 50px;
+        display: inline;
+        margin-right: 200px;
+    }
+    .title{
+      margin-top:20px;
+      border: solid 2px lightslategrey;
+      width:1000px;
+      margin-left:auto;
+      margin-right: auto;
+      border-radius: 5px;
+    }
+    
+    .title-colour{
+        margin-top:0px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom:5px;
+        width: 990px; 
+        height:;30px;       
+        background-color: rgb(232,232,232);
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button {
+      margin-top: 30px;
+      margin-left: 650px;
+      background-color: #6495ED; 
+      border: solid;
+      color: white;
+      padding: 10px 10px;
+      font-size: 20px;
+      border-radius: 5px;
+}
+  </style>
 </head>
 <body>
-<h1>统一建模语言理论测试</h1>
-<p>考试科目: 统一建模语言<br>时间: 100分钟<br>得分：<br>
+<h1 style="front-size:200%;text-align:center">统一建模语言理论测试</h1>
+<div class="frame1">
+    <div class="frame2">考试科目:统一建模语言</div> 
+    <div class="frame2">时间: 100分钟 </div>
+    <div class="framel2">得分:</div>
+   </div>
+<div class="frame1">
   <from>
-    班级 (必填) : <input type="text" name="class">
-    <br>
-    学号 (必填) ：<input type="text" name="number">
-    <br>
-    姓名 (必填) : <input type="text" name="name">
-  </p>
-<h3>一、填空题 (每孔5分,共20分)</h3>
+    <div class="frame2">班级 (必填) : <input type="text" name="class"></div>
+    
+    <div class="frame2">学号 (必填) ：<input type="text" name="number"></div>
+   
+    <div class="frame2">姓名 (必填) : <input type="text" name="name"></div>
+  </from>
+</div>
+  
+<div class="title">
+<div class="title-colour"><h3>一、填空题 (每孔5分,共20分)</h3></div>
     <ol>
       <li>UML中的中文全称是:
         <br>
@@ -26,8 +86,10 @@
         <br>
         <input type="text" name="object1"> <input type="text" name="object2"> <input type="text" name="object3">
       </li>
-    </ol>
-<h3>二、选择题 (每题5分，共20分)</h3>
+  </ol>
+</div>
+<div class="title">
+<div class="title-colour"><h3>二、选择题 (每题5分，共20分)</h3></div>
     <ol>
       <li>UML与软件工程的关系是：
         <form>
@@ -44,7 +106,9 @@
           <input type="radio" name="JAVA" value="D">(D)单继承和多继承都不支持
           </li> 
      </ol>
-<h3>三、多项选择题(每题10分，共20分)</h3>
+</div>
+<div class="title">
+<div class="title-colour"><h3>三、多项选择题(每题10分，共20分)</h3></div>
         <ol>
           <li>用例的粒度分为一下哪三种:<br/>
             <form>
@@ -63,7 +127,9 @@
              </form>
            </li>
         </ol>
-<h3>四、判断题（每题10分，共20分）</h3>
+</div>
+<div class="title">
+<div class="title-colour"><h3>四、判断题（每题10分，共20分）</h3></div>
   <ol>
     <form>
     <li>用例图只是用于和客户交流和沟通的，用于确定需求。
@@ -76,16 +142,21 @@
     </li>
     <form>  
   </ol>
-<h3>五、简答题（每题20分，共20分）</h3>
+</div>
+<div class="title">
+<div class="title-colour"><h3>五、简答题（每题20分，共20分）</h3></div>
   <ol>
     <li><form>简述什么事模型以及模型的表现形式？
      <textarea style="width:150px;height:100px"></textarea>
     </form>
     </li>
   </ol>
+</div>
+<div style="text-align:center" >
 <form>
-  <input type="submit" name="submit" value="计算分数"> 
+  <input class="button" type="submit" name="submit" value="计算分数"> 
 </form>
+</div>
 <hr/>
 </body>
 </html>
